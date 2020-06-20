@@ -56,15 +56,16 @@ font-weight: bold;
 }
 
 p:nth-of-type(2){
-    margin-top: 5%;
+margin-top: 5%;
 }
 
 hr {
-    border: solid 1px;
+border: solid 1px;
+margin-left: 3%;
 }
 span {
-    margin-top: 15px;
-    font-style: italic;
+margin-top: 15px;
+font-style: italic;
 }
 
 /*---Section Styles---*/
@@ -95,7 +96,7 @@ width: 100%;
 }
 
 .buttons{
-display: block;
+display: inline-flex;
 width: 35%;
 margin: .5rem;
 }
@@ -135,8 +136,8 @@ background-color: whitesmoke;
 
 .last-p {
 width: 97%;
-text-align: left;
-margin-left: 7%;
+/* text-align: left; */
+margin-left: 3%;font-size: .9em;
 }
 
 button[type="submit"] {
@@ -171,15 +172,17 @@ text-align: right;
 font-style: italic;
 }
 textarea::placeholder {
-    text-align: left;
+text-align: left;
 }
 
 .sub:hover {
-    color: blue;
-    font-size: 2em;
-    font-weight: 800;
+color: blue;
+font-size: 2em;
+font-weight: 800;
 }
 
+    
+/*---@media Query---*/
 
 
 @media (min-width:768px){
@@ -205,12 +208,35 @@ color: black;
 label {
 float:left;
 clear: both;
+}
 
+.buttons{
+display: inline-flex;
+width: 70%;
+margin: .5rem;
+}
+.label {
+display: inline-block;
+margin-left: 1%;
+margin-right: 5%;
 }
 
 .banner {
 width: 77%;
 margin: auto;
+}
+
+hr {
+margin-left: 1%;
+}
+.newsletter{
+width: 95%;
+}
+.last p {
+width: 70%;
+text-align: left;
+margin-left: 2%;
+font-size: 1.1em;
 }
 
 input[type="text"],
