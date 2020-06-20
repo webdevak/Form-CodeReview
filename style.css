@@ -1,0 +1,246 @@
+* {
+box-sizing: border-box;
+}
+/*---Base Elements---*/
+body {
+background-color: white;
+font-family: monospace;
+font-size: 16px;
+line-height: 1.4;
+text-align: center;
+color: gray;
+}
+
+header{
+display: grid;
+background-color: #000000;
+color: white;
+
+}
+.banner {
+display: grid;
+border-bottom: double black 10px; 
+margin: 0 2%;
+}
+.banner p {
+margin-top: 0;
+margin-right: 4px;
+margin-left: 4px;
+margin-bottom: 38px;
+padding-left: 10px;
+padding-right: 10px;
+line-height: 1;
+}
+
+h1 {
+font-size: 1.3em;
+width: 97%;
+padding-left: 2px;
+padding: 2px;
+color: #000000;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 20px;
+margin-bottom: 0.37em;
+}
+
+fieldset {
+border: none;
+}
+
+legend {
+color: black;
+font-size: 1.3em;
+text-align: left;
+font-weight: bold;
+}
+
+p:nth-of-type(2){
+    margin-top: 5%;
+}
+
+hr {
+    border: solid 1px;
+}
+span {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/*---Section Styles---*/
+
+form {
+width: 97%;
+}
+
+.info{
+text-align: left;
+}
+
+.contact {
+margin-bottom: 15px;
+width: 100%;
+margin-top: 20px;
+}
+
+label,
+textarea {
+display: inline-block;
+margin-left: 13px;
+}
+
+.newsletter {
+text-align: left;
+width: 100%;
+}
+
+.buttons{
+display: block;
+width: 35%;
+margin: .5rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+display: block;
+clear: both;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select[id="state"] {
+padding: 10px;
+border-radius: 5px;
+width: 100%;
+margin: 10px;
+background-color: whitesmoke;
+}
+
+input[type="number"] {
+width: 50%;
+padding: 10px;
+border-radius: 5px;
+margin: 10px 43% 10px 10px;
+background-color: whitesmoke;
+}
+
+textarea {
+padding: 20px;
+border-radius: 5px;
+width: 97%;
+margin: 10px;
+background-color: whitesmoke;
+}
+
+.last-p {
+width: 97%;
+text-align: left;
+margin-left: 7%;
+}
+
+button[type="submit"] {
+width: 97%;
+padding: 15px;
+margin-top: 20px;
+background-color:lightblue;
+border-radius: 5px;
+margin-left: 2px;
+color: white;
+}
+
+footer{
+display: grid;
+margin-top: 20px;
+margin-bottom: 200px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select[id="state"],
+textarea,
+button[type="submit"] {
+border:none;
+}
+
+::placeholder {
+color:#c0c0c0;
+text-align: right;
+font-style: italic;
+}
+textarea::placeholder {
+    text-align: left;
+}
+
+.sub:hover {
+    color: blue;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+
+
+@media (min-width:768px){
+h1 {
+font-size: 1.4em;
+}
+
+header {
+margin: 0 20px;
+}
+
+main {
+display: grid;
+margin: auto;
+}
+
+.form {
+display: inline-block;
+width: 80%;
+margin: auto;
+color: black;
+}
+label {
+float:left;
+clear: both;
+
+}
+
+.banner {
+width: 77%;
+margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select[id="state"] {
+padding: 10px;
+border-radius: 5px;
+width: 71%;
+/* margin: 10px; */
+background-color: whitesmoke;
+
+
+}
+input[type="number"] {
+width: 20%;
+padding: 10px;
+border-radius: 5px;
+margin: 10px 52% 10px 3%;
+background-color: whitesmoke;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select[id="state"],
+textarea {
+float: right;
+}
+
+
+}
