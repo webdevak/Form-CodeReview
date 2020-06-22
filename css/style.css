@@ -100,10 +100,10 @@ display: flex;
 flex-direction: column;
 margin: .5rem;
 }
-.newsletter label {
-  margin-bottom: 10px;
-}
-
+ input[type="radio"],
+ input[type="checkbox"] {
+      margin-right: 4px;
+ }
 
 input[type="text"],
 input[type="email"],
@@ -217,16 +217,8 @@ clear: both;
 
 .newsletter,
 .buttons{
-flex-direction: row;
+flex-direction: column;
 margin: .5rem;
-}
-
-
-.label {
-display: inline-block;
- margin-left: 1%;
-margin-right: 5%;
-
 }
 
 .banner {
@@ -239,7 +231,7 @@ margin-left: 1%;
 }
 .newsletter{
 width: 95%;
-padding: 50px 50px 35px 50px;
+padding: 10px
 }
 .last p {
 width: 70%;
@@ -257,9 +249,8 @@ border-radius: 5px;
 width: 71%;
 /* margin: 10px; */
 background-color: whitesmoke;
-
-
 }
+
 input[type="number"] {
 width: 20%;
 padding: 10px;
