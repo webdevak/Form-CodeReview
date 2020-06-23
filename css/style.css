@@ -1,7 +1,7 @@
 * {
 box-sizing: border-box;
 }
-/*---Base Elements---*/
+/*===Base Elements===*/
 body {
 background-color: white;
 font-family: monospace;
@@ -16,20 +16,6 @@ display: grid;
 background-color: #000000;
 color: white;
 
-}
-.banner {
-display: grid;
-border-bottom: double black 10px; 
-margin: 0 2%;
-}
-.banner p {
-margin-top: 0;
-margin-right: 4px;
-margin-left: 4px;
-margin-bottom: 38px;
-padding-left: 10px;
-padding-right: 10px;
-line-height: 1;
 }
 
 h1 {
@@ -68,11 +54,9 @@ margin-top: 15px;
 font-style: italic;
 }
 
-/*---Section Styles---*/
 
-form {
-width: 97%;
-}
+/* ===Class Elements=== */
+/*---Section Styles---*/
 
 .info{
 text-align: left;
@@ -83,16 +67,25 @@ margin-bottom: 15px;
 width: 100%;
 margin-top: 20px;
 }
-
-label,
-textarea {
-display: inline-block;
-margin-left: 13px;
+.banner {
+display: grid;
+border-bottom: double black 10px; 
+margin: 0 2%;
+}
+.banner p {
+margin-top: 0;
+margin-right: 4px;
+margin-left: 4px;
+margin-bottom: 38px;
+padding-left: 10px;
+padding-right: 10px;
+line-height: 1;
 }
 
 .newsletter {
 text-align: left;
 width: 100%;
+background: whitesmoke;
 }
 .newsletter,
 .buttons{
@@ -100,20 +93,45 @@ display: flex;
 flex-direction: column;
 margin: .5rem;
 }
- input[type="radio"],
- input[type="checkbox"] {
-      margin-right: 4px;
- }
+
+.last-p {
+width: 97%;
+margin-left: 3%;font-size: .9em;
+}
+
+.sub:hover {
+font-size: 2em;
+font-weight: 800;
+background-color: lightblue;
+}
+
+/* ===Base Elements=== */
+/*---Section Styles---*/
+
+form {
+width: 97%;
+}
+
+label,
+textarea {
+display: inline-block;
+margin-left: 13px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+     margin-right: 4px;  
+}
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 select[id="state"] {
-padding: 10px;
-border-radius: 5px;
-width: 100%;
-margin: 10px;
-background-color: whitesmoke;
+
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+    margin: 10px;
+    background-color: whitesmoke;
 }
 
 input[type="number"] {
@@ -132,11 +150,6 @@ margin: 10px;
 background-color: whitesmoke;
 }
 
-.last-p {
-width: 97%;
-/* text-align: left; */
-margin-left: 3%;font-size: .9em;
-}
 
 button[type="submit"] {
 width: 97%;
@@ -154,16 +167,6 @@ margin-top: 20px;
 margin-bottom: 200px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-select[id="state"],
-textarea,
-button[type="submit"] {
-border:none;
-}
-
 ::placeholder {
 color:#c0c0c0;
 text-align: right;
@@ -173,11 +176,6 @@ textarea::placeholder {
 text-align: left;
 }
 
-.sub:hover {
-color: blue;
-font-size: 2em;
-font-weight: 800;
-}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -185,24 +183,36 @@ input[type="number"],
 select[id="state"],
 textarea,
 button[type="submit"],
-input[type="checkbox"],
-input[type="radio"]:focus{
-    border-color: solid 5px khaki;
+label[type="checkbox"],
+label[type="radio"] {
+
+    border: 3px solid;
+    border-color:#fefefe;
+    transition-duration: .4s;
+    transition-property: border-color;
+
 }
 
-    
-/*---@media Query---*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select[id="state"]:focus,
+textarea:focus,
+button[type="submit"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
 
+    border-color: #52bab3;
+
+}
+
+
+/* ===@media query=== */
 
 @media (min-width:768px){
-h1 {
-font-size: 1.4em;
-}
 
-main {
-display: grid;
-margin: auto;
-}
+/* ===Class Elements=== */
 
 .form {
 display: inline-block;
@@ -210,10 +220,7 @@ width: 80%;
 margin: auto;
 color: black;
 }
-label {
-float:left;
-clear: both;
-}
+
 
 .newsletter,
 .buttons{
@@ -226,11 +233,8 @@ width: 77%;
 margin: auto;
 }
 
-hr {
-margin-left: 1%;
-}
 .newsletter{
-width: 95%;
+width: 75%;
 padding: 10px
 }
 .last p {
@@ -240,14 +244,36 @@ margin-left: 2%;
 font-size: 1.1em;
 }
 
+/* ===Base Elements=== */
+/*---Section Styles---*/
+
+h1 {
+font-size: 1.4em;
+}
+
+main {
+display: grid;
+margin: auto;
+}
+
+
+hr {
+margin-left: 1%;
+}
+
+label {
+float:left;
+clear: both;
+}
+
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 select[id="state"] {
 padding: 10px;
-border-radius: 5px;
+border-radius: 10px;
 width: 71%;
-/* margin: 10px; */
 background-color: whitesmoke;
 }
 
