@@ -5,7 +5,7 @@ box-sizing: border-box;
 body {
 background-color: white;
 font-family: monospace;
-font-size: 16px;
+font-size: 1.2em;
 line-height: 1.4;
 text-align: center;
 color: gray;
@@ -13,7 +13,7 @@ color: gray;
 
 header{
 display: grid;
-background-color: #000000;
+background-color: #2d3945;
 color: white;
 
 }
@@ -85,7 +85,7 @@ line-height: 1;
 .newsletter {
 text-align: left;
 width: 100%;
-background: whitesmoke;
+/* background: whitesmoke; */
 }
 .newsletter,
 .buttons{
@@ -99,10 +99,14 @@ width: 97%;
 margin-left: 3%;font-size: .9em;
 }
 
+
 .sub:hover {
-font-size: 2em;
+font-size: 1.4em;
 font-weight: 800;
-background-color: lightblue;
+cursor: pointer;
+background-color: rgb(63, 93, 104);
+transition-duration: 1s;
+transition-property: background-color,font-size;
 }
 
 /* ===Base Elements=== */
@@ -115,7 +119,7 @@ width: 97%;
 label,
 textarea {
 display: inline-block;
-margin-left: 13px;
+margin-left: 6%;
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -166,11 +170,13 @@ input[type="email"]:valid {
 button[type="submit"] {
 width: 97%;
 padding: 15px;
+height: 70px;
 margin-top: 20px;
 background-color:lightblue;
-border-radius: 5px;
+border-radius: 10px;
 margin-left: 2px;
 color: white;
+font-size: 1.2em;
 }
 
 footer{
@@ -228,7 +234,7 @@ input[type="radio"]:focus {
 
 .form {
 display: inline-block;
-width: 80%;
+width: 79%;
 margin: auto;
 color: black;
 }
@@ -285,6 +291,7 @@ input[type="tel"],
 select[id="state"] {
 padding: 10px;
 border-radius: 10px;
+height:60px;
 width: 71%;
 background-color: whitesmoke;
 }
