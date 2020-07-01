@@ -14,51 +14,50 @@
     <h2>The Code Review</h2>
 </header>
 
-<div class="banner">
-    <h1>Signup For Our Newsletter</h1>
-    <p>Get the Latest on how your code is doing right in your inbox</p>
-</div>
 
     
 <main>
-
-<br>
+    <div class="banner">
+        <h1>Signup For Our Newsletter</h1>
+        <p>Get the Latest on how your code is doing right in your inbox</p>
+    </div>
+    
     
 <form class="form" action="index.html" method="POST">
 
    <fieldset class="info">
        <legend class="contact">Contact Information</legend>
-    <div>
+    <div class="form-field">
         <label for="name">FullName:</label>
         <input type="text" id="name" name="full-name"
         placeholder="Required" required>
     </div>
 
-    <div>
+    <div class="form-field">
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email-address"
         placeholder="Required" required>
     </div>
 
-    <div>
+    <div class="form-field">
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone-number"
         placeholder="555-555-5555">
     </div>
 
-    <div>
+    <div class="form-field">
         <label for="street">Street Address:</label>
         <input type="text" id="street" name="street-address"
         placeholder="555 West st">
     </div>
 
-    <div>
+    <div class="form-field">
         <label for="city">City:</label>
         <input type="text" id="city" name="city"
         placeholder="City">
     </div>
 
-    <div>
+    <div class="form-field">
         <label for="state">State:</label>
         <select id="state" name="State">
         <option >choose state</option>
@@ -116,13 +115,13 @@
         </select>
     </div>
 
-    <div>
+    <div class="form-field">
         <label for="zip">Zip Code:</label>
-        <input type="number" id="zip" name="zip-code" 
+        <input type="text" class="Zip" d="zip" name="zip-code" 
         placeholder="Zip Code">
     </div>
 </fieldset>
-        <hr>
+        
 <fieldset class="newsletter">
    <legend> Newsletter</legend>
     <p>Select the Newsletter you would like to recieve </p>

@@ -1,10 +1,12 @@
+/*=== Universal Element ===*/
 * {
 box-sizing: border-box;
 }
 /*===Base Elements===*/
+
 body {
 background-color: white;
-font-family: monospace;
+font-family: 'Merriweather' serif;
 font-size: 1.2em;
 line-height: 1.4;
 text-align: center;
@@ -15,19 +17,13 @@ header{
 display: grid;
 background-color: #2d3945;
 color: white;
-
 }
 
 h1 {
-font-size: 1.3em;
-width: 97%;
-padding-left: 2px;
-padding: 2px;
+margin-top: 2em;
+font-size: 1.2em;
+width: 100%;
 color: #000000;
-margin-left: 5px;
-margin-right: 5px;
-margin-top: 20px;
-margin-bottom: 0.37em;
 }
 
 fieldset {
@@ -36,69 +32,56 @@ border: none;
 
 legend {
 color: black;
-font-size: 1.3em;
+font-size: 1.2em;
 text-align: left;
 font-weight: bold;
+border-top: 3px solid #2d3945;
 }
 
-p:nth-of-type(2){
-margin-top: 5%;
-}
 
-hr {
-border: solid 1px;
-margin-left: 3%;
-}
 span {
 margin-top: 15px;
 font-style: italic;
 }
 
-
-/* ===Class Elements=== */
 /*---Section Styles---*/
 
 .info{
 text-align: left;
 }
 
-.contact {
-margin-bottom: 15px;
-width: 100%;
-margin-top: 20px;
-}
 .banner {
-display: grid;
-border-bottom: double black 10px; 
+border-bottom: double black 5px; 
 margin: 0 2%;
 }
 .banner p {
 margin-top: 0;
-margin-right: 4px;
-margin-left: 4px;
 margin-bottom: 38px;
-padding-left: 10px;
-padding-right: 10px;
 line-height: 1;
+}
+.contact,
+.newsletter legend {
+padding: 3rem 0 0;
+text-align: left;
+width: 100%;
+}
+
+.contact{
+padding-bottom: 1em;
 }
 
 .newsletter {
 text-align: left;
 width: 100%;
-/* background: whitesmoke; */
 }
 .newsletter,
 .buttons{
-display: flex;
-flex-direction: column;
 margin: .5rem;
 }
 
 .last-p {
-width: 97%;
-margin-left: 3%;font-size: .9em;
+margin-left: 3%;
 }
-
 
 .sub:hover {
 font-size: 1.4em;
@@ -109,62 +92,69 @@ transition-duration: 1s;
 transition-property: background-color,font-size;
 }
 
-/* ===Base Elements=== */
 /*---Section Styles---*/
 
 form {
 width: 97%;
 }
+legend,
+.newsletter label,
+.form-field label {
+display: block;
+}
 
 label,
 textarea {
-display: inline-block;
-margin-left: 6%;
-}
+margin-left: 5%;
+} 
 input[type="radio"],
 input[type="checkbox"] {
-     margin-right: 4px;  
+margin-right: 4px;  
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 select[id="state"] {
-
-    padding: 10px;
-    border-radius: 7px;
-    width: 100%;
-    margin: 10px;
-    background-color: whitesmoke;
-}
-
-input[type="number"] {
-width: 50%;
 padding: 10px;
-border-radius: 5px;
-margin: 10px 43% 10px 10px;
+border-radius: 7px;
+width: 75%;
+margin: 10px;
 background-color: whitesmoke;
 }
 
 label[for="textarea"] {
-    margin-left: 3%;
+margin-left: 3%;
+}
+.Zip {
+max-width: 35%;
+}
+
+input[id="name"]:valid,
+input[type="email"]:valid {
+background: url('../images/lightcheck.png');
+background-color: whitesmoke;
+background-size: 20px;
+background-repeat: no-repeat;
+background-position: 98%;
+}
+
+::placeholder {
+color:#c0c0c0;
+text-align: right;
+font-style: italic;
+}
+textarea::placeholder {
+text-align: left;
 }
 
 textarea {
 padding: 20px;
-border-radius: 5px;
+border-radius: 10px;
 width: 97%;
-margin: 10px;
+margin: 0em;
+height: 12rem;
 background-color: whitesmoke;
-}
-input[id="name"]:valid,
-input[type="email"]:valid {
-    background: url('../images/lightcheck.png');
-    background-color: whitesmoke;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 98%;
-
 }
 
 button[type="submit"] {
@@ -183,135 +173,60 @@ footer{
 display: grid;
 margin-top: 20px;
 margin-bottom: 200px;
-}
-
-::placeholder {
-color:#c0c0c0;
-text-align: right;
-font-style: italic;
-}
-textarea::placeholder {
-text-align: left;
-}
+} 
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="number"],
 select[id="state"],
 textarea,
 button[type="submit"],
 label[type="checkbox"],
 label[type="radio"] {
-
-    border: 3px solid;
-    border-color:#fefefe;
-    transition-duration: .4s;
-    transition-property: border-color;
-
+border: 3px solid;
+border-color:#fefefe;
+transition-duration: .4s;
+transition-property: border-color;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-input[type="number"]:focus,
 select[id="state"]:focus,
 textarea:focus,
 button[type="submit"]:focus,
 input[type="checkbox"]:focus,
 input[type="radio"]:focus {
-
-    border-color: #52bab3;
-
+border-color: #52bab3;
 }
-
 
 /* ===@media query=== */
 
 @media (min-width:768px){
 
-/* ===Class Elements=== */
-
-.form {
-display: inline-block;
-width: 79%;
-margin: auto;
-color: black;
-}
-
-
-.newsletter,
-.buttons{
-flex-direction: column;
-margin: .5rem;
-}
-
-.banner {
-width: 77%;
-margin: auto;
-}
-
-.newsletter{
-width: 75%;
-padding: 10px
-}
-.last p {
-width: 70%;
-text-align: left;
-margin-left: 2%;
-font-size: 1.1em;
-}
-
-/* ===Base Elements=== */
-/*---Section Styles---*/
-
-h1 {
-font-size: 1.4em;
-}
-
 main {
-display: grid;
-margin: auto;
+max-width: 55%;
+margin: 0 auto;
+}
+.form-field {
+display: flex;
 }
 
-
-hr {
-margin-left: 1%;
+.form-field label {
+flex-basis: 20%;
+}
+.form-field input {
+flex-basis: 75%;
 }
 
 label {
-float:left;
-clear: both;
+margin-top: 10px;
+margin-left: 0;
 }
 
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select[id="state"] {
-padding: 10px;
-border-radius: 10px;
-height:60px;
-width: 71%;
-background-color: whitesmoke;
+input[type="radio"],
+input[type="checkbox"] {
+margin-right: 1rem;  
 }
-
-input[type="number"] {
-width: 20%;
-padding: 10px;
-border-radius: 5px;
-margin: 10px 52% 10px 3%;
-background-color: whitesmoke;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-select[id="state"],
-textarea {
-float: right;
-}
-
 
 }
