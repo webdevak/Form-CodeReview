@@ -2,7 +2,7 @@
 * {
 box-sizing: border-box;
 }
-/*===Base Elements===*/
+/*===Base Elements===================*/
 
 body {
 background-color: white;
@@ -39,19 +39,20 @@ border-top: 3px solid #2d3945;
 }
 
 
+
 span {
 margin-top: 15px;
 font-style: italic;
 }
 
-/*---Section Styles---*/
+/*---Class Styles---------------------*/
 
 .info{
 text-align: left;
 }
 
 .banner {
-border-bottom: double black 5px; 
+border-bottom: double black 12px; 
 margin: 0 2%;
 }
 .banner p {
@@ -70,6 +71,10 @@ width: 100%;
 padding-bottom: 1em;
 }
 
+.legend {
+    border-top:none;
+}
+
 .newsletter {
 text-align: left;
 width: 100%;
@@ -78,6 +83,10 @@ width: 100%;
 .buttons{
 margin: .5rem;
 }
+
+.Zip {
+    max-width: 35%;
+    }
 
 .last-p {
 margin-left: 3%;
@@ -92,7 +101,7 @@ transition-duration: 1s;
 transition-property: background-color,font-size;
 }
 
-/*---Section Styles---*/
+/*--- Element Styles-------------------------*/
 
 form {
 width: 97%;
@@ -125,9 +134,6 @@ background-color: whitesmoke;
 
 label[for="textarea"] {
 margin-left: 3%;
-}
-.Zip {
-max-width: 35%;
 }
 
 input[id="name"]:valid,
@@ -200,7 +206,7 @@ input[type="radio"]:focus {
 border-color: #52bab3;
 }
 
-/* ===@media query=== */
+/* ===@media query=========================== */
 
 @media (min-width:768px){
 
